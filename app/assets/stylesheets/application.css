@@ -11,3 +11,37 @@
  *= require_self
  *= require_tree .
  */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #EEE;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrap {
+	margin: auto;
+	max-width: 1140px;
+	padding: 3em;
+	width: 90%;
+	overflow: hidden;
+}
+
+.product {
+	display: inline-block;
+	width: 22%;
+	margin: 2em 1%;
+	background-color: #FFF;
+	padding: 1em;
+}
+
+.product img {
+	margin: 2em 0;
+}
