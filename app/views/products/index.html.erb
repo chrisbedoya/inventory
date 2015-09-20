@@ -2,12 +2,12 @@
 
 <% @products.each do |product| %>
    <div class="product">
-      <%= product.name %> <strong><%= product.quantity %></strong>
+      <span class="name"><%= product.name %></span>
+      <span class="quantity"><%= product.quantity %></span>
    	<%= image_tag(product.image) %>
 
       <div>
       	<small>
-      		<%= link_to 'Show', product %>
       		<%= link_to 'Edit', edit_product_path(product) %>
       		<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
       	</small>

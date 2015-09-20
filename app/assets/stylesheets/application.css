@@ -19,6 +19,7 @@
 
 body {
 	background-color: #EEE;
+	font-family: sans-serif;
 	text-align: center;
 }
 
@@ -28,20 +29,28 @@ img {
 
 .wrap {
 	margin: auto;
-	max-width: 1140px;
-	padding: 3em;
-	width: 90%;
+	max-width: 1200px;
+	padding: 3em 0;
 	overflow: hidden;
 }
 
 .product {
+	border-radius: 3px;
 	display: inline-block;
-	width: 22%;
+	width: 16%;
 	margin: 2em 1%;
 	background-color: #FFF;
-	padding: 1em;
+	padding: 1.5em 2em;
+	vertical-align: top;
 }
 
-.product img {
-	margin: 2em 0;
+.product .name {
+	float: left;
+	line-height: 1.8;
+}
+
+.product .quantity {
+	float: right;
+	font-size: 1.313em;
+	font-weight: 700;
 }
