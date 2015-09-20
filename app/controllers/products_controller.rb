@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
    before_action :set_product, only: [:show, :edit, :update, :destroy]
    
    def index
-      @products = Product.order('category')
+      @products = Product.group('category, name')
    end
 
   # GET /products/1

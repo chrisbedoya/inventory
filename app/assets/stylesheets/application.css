@@ -19,7 +19,7 @@
 
 body {
 	background-color: #EEE;
-	font-family: sans-serif;
+	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
 	text-align: center;
 }
 
@@ -46,10 +46,13 @@ img {
 
 .product .name {
 	float: left;
+	font-size: 0.875em;
 	line-height: 1.8;
+	text-transform: uppercase;
 }
 
 .product .quantity {
+	color: #009900;
 	float: right;
 	font-size: 1.313em;
 	font-weight: 700;

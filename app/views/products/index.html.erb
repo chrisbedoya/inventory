@@ -1,16 +1,18 @@
 <h1>UPTOP Inventory</h1>
 
-<% @products.each do |product| %>
-   <div class="product">
-      <span class="name"><%= product.name %></span>
-      <span class="quantity"><%= product.quantity %></span>
-   	<%= image_tag(product.image) %>
+<div>
+   <% @products.each do |product| %>
+      <div class="product">
+         <span class="name"><%= product.name %></span>
+         <span class="quantity"><%= product.quantity %></span>
+      	<%= image_tag(product.image) %>
 
-      <div>
-      	<small>
-      		<%= link_to 'Edit', edit_product_path(product) %>
-      		<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-      	</small>
+         <div>
+         	<small>
+         		<%= link_to 'Edit', edit_product_path(product) %>
+         		<%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+         	</small>
+         </div>
       </div>
-   </div>
-<% end %>
+   <% end %>
+</div>
